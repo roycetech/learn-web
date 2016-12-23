@@ -1,0 +1,14 @@
+/*
+On reflection, it'd be nice to have a cleaner font size to work with after performing arithmetic inside our span. Use the appropriate built-in function to round the span's font size to the nearest whole number.
+*/
+
+$size: 3.75em;
+
+.sign {
+  font-size: 3.75em;
+  font-weight: bold;
+  padding: 20px 40px;
+  span {
+    font-size: round($size / 2);
+  }
+}

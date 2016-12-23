@@ -1,0 +1,20 @@
+/*
+Let's make our respond-to more flexible by allowing it to accept query values rather than fixed breakpoints. Rewrite the mixin to output a media query with a min-width of the $query argument, which contains the @content block.
+*/
+
+
+@mixin respond-to($query) {
+  @media (min-width: $query) {
+    @content;
+  }
+}
+
+.factory {
+  width: 100%;
+  @include respond-to(960px) {
+    width: percentage(600px / 960px);
+  }
+  @include respond-to(768px) {
+    width: 50%;
+  }
+}

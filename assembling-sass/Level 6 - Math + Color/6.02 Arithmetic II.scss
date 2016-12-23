@@ -1,0 +1,12 @@
+/*
+Your coworker has been attempting to set the font size of span elements inside .sign to half the .sign font size, without success. Knowing what you do about triggering division, utilize parentheses to fix the problem.
+*/
+
+.sign {
+  font-size: 3.75em;
+  font-weight: bold;
+  padding: 20px 40px;
+  span {
+    font-size: (3.75em / 2);
+  }
+}

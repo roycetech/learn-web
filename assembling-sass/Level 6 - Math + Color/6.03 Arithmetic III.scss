@@ -1,0 +1,15 @@
+/*
+3.75em has been recurring throughout our stylesheet, so let's move it to a variable and use that variable where possible. Remember: utilizing a variable also triggers division, which removes the need for our parentheses.
+*/
+
+
+$size: 3.75em;
+
+.sign {
+  font-size: $size;
+  font-weight: bold;
+  padding: 20px 40px;
+  span {
+    font-size: $size / 2;
+  }
+}

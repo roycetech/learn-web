@@ -1,0 +1,16 @@
+/*
+Unfortunately, our hover state just isn't obvious enough. Remove the saturate() and lighten() additions, and use a color function to invert the value.
+*/
+
+$color-link: #3097b4;
+
+a {
+  color: $color-link;
+  text-decoration: underline;
+  &:hover {
+    color: invert($color-link);
+  }
+  &:active {
+    color: invert($color-link);
+  }
+}

@@ -1,0 +1,9 @@
+.example {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 25%;
+}
+
+.list-quad {
+  display: flex;
+}

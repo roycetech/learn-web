@@ -1,0 +1,16 @@
+/*
+We need to find the height of video containers given a width and a 16:9 aspect ratio. To avoid doing the math manually each time, create a function called aspect that takes a $width argument and returns the commented-out formula. Then, use it to set the height on .intro given a width of 500px.
+*/
+
+
+// $width * 9 / 16
+
+@function aspect($width) {
+    @return $width * 9 / 16;
+}
+
+.intro {
+  height: #{aspect(500)}px;
+  background: #000;
+  width: 500px;
+}

@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+.modal-overlay.active {
+  animation: fadeIn 0.25s forwards;
+}

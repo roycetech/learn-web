@@ -1,0 +1,12 @@
+.btn {
+  background-color: #00A0D6;
+  color: #FFF;
+  transition: all 0.4s;
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover {
+  background-color: #007DA7;
+  color: #E3E3E3;
+}

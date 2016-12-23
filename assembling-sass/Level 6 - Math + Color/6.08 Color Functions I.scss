@@ -1,0 +1,10 @@
+/*
+Anchor elements are currently missing a hover state - add one via nesting which sets a color 15% lighter than $color-link.
+*/
+
+$color-link: #3097b4;
+
+a:hover {
+  color: lighten($color-link, 15%);
+  text-decoration: underline;
+}
